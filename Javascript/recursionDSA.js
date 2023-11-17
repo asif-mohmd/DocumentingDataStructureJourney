@@ -1,15 +1,15 @@
-let sum = 1;
+// let sum = 1;
 
-function isFactorial(n) {
-    if (n <= 1) {
-        return sum;
-    }
+// function isFactorial(n) {
+//     if (n <= 1) {
+//         return sum;
+//     }
 
-    sum = sum * n;
-    return isFactorial(n - 1);
-}
+//     sum = sum * n;
+//     return isFactorial(n - 1);
+// }
 
-console.log(isFactorial(2));
+// console.log(isFactorial(2));
 
 
 function recursiveFactorial(n){

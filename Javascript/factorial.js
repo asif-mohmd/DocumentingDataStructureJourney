@@ -1,10 +1,10 @@
-function factorial(n){
+function factorialTest(n){
     let result = 1
     for(let i=2;i<=n;i++){
         result = i * result
     }
 
-    return result
+    return result 
 }
 
-console.log(factorial(5))
+console.log(factorialTest(5))
