@@ -14,12 +14,28 @@ class LinkedList{
     isEmpty(){
         return this.size === 0
     }
-    getEmpty(){
-        return this.size === 0
+    getSize(){
+        return this.size
     }
-}
+
+    prepend(value){
+        const node = new Node(value)
+        if(this.isEmpty()){
+            console.log(node,"= node")
+            this.head = node
+            console.log(this.head, " = head")
+
+        }else{
+            node.next = this.head
+            this.head = node
+        }
+        this.size++
+
+    }
+} 
 
 const list = new LinkedList()
 
 console.log("is empty:", list.isEmpty())
 console.log("size:",list.getSize())
+list.prepend(10)
