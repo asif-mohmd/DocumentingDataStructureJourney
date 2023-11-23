@@ -121,9 +121,6 @@ class LinkedList{
     }
 
 
-
-
-
     print(){
        
         if(this.isEmpty()){
