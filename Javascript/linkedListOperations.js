@@ -142,6 +142,8 @@ class LinkedList{
 const list = new LinkedList()
 
 
+
+
 list.print()
 list.prepend(10)
 list.append(20)
