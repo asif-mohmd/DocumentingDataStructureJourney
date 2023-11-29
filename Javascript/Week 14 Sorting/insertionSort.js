@@ -1,6 +1,6 @@
 function insertionSort(arr){
 
-    for(let i=0;i<arr.length;i++){
+    for(let i=1;i<arr.length;i++){
         let  numToInsert = arr[i]
         let j = i-1
 
