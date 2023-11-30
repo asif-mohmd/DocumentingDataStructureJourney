@@ -21,7 +21,5 @@ function quickSort(arr){
 }
 
 
-
-
 let arr = [4,-3,5,-2,3,-5,-1,7,9,8]
 console.log(quickSort(arr))  
