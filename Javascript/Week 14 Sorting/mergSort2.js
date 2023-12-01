@@ -3,7 +3,6 @@
 function mergeSort(arr){
 
     if(arr.length < 2){
-        
         return arr
     }
 
@@ -17,25 +16,26 @@ function mergeSort(arr){
 
 }
 
+
 function merge(leftArr,rightArr){
 
-    let sortedArr = []
-
+    let sortedArray = []
 
     while(leftArr.length && rightArr.length){
-        if(leftArr[0] <= rightArr[0]){
-            sortedArr.push(leftArr.shift())
+        if(leftArr[0]<=rightArr[0]){
+            sortedArray.push(leftArr.shift())
         }else{
-            sortedArr.push(rightArr.shift())
-        }
-    }
+            sortedArray.push(rightArr.shift())
 
-    return [...sortedArr,...leftArr,...rightArr]
+        }
+
+      
+
+    }
+    return [...sortedArray,...leftArr,...rightArr]
 
 }
 
 const arr = [8,20,-2,4,-6]
 
 console.log(mergeSort(arr))
-
-// console.log(merge([3,6],[2,4]))
