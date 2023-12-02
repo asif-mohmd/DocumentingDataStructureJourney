@@ -20,8 +20,6 @@ class Stack{
         return this.items[this.items.length -1]
     }
 
-
-
 }
 
 const cars = new Stack()
