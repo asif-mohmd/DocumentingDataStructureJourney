@@ -25,7 +25,6 @@ class Stack{
 const cars = new Stack()
 
 
-
 cars.push("BMW")
 cars.push("Audi")
 cars.push("Benz")
