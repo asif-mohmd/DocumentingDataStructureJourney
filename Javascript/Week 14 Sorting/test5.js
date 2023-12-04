@@ -16,8 +16,6 @@ function selectionSort(arr){
 
 }
 
-
-
 const arr = [8,20,-2,4,-6]
 
 console.log(selectionSort(arr))
