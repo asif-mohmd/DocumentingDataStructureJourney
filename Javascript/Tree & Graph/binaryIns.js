@@ -3,9 +3,9 @@ class Node{
         this.value = value
         this.left = null
         this.right = null
+
     }
 }
-
 
 class BinarySearchTree{
     constructor(){
@@ -21,32 +21,32 @@ class BinarySearchTree{
         if(this.isEmpty()){
             this.root = newNode
         }else{
-            this.insertNode(this.root,newNode) 
+            this.insertNode(this.root,newNode)
         }
-    }
 
+    }
 
     insertNode(root,newNode){
         if(newNode.value<root.value){
-            if(root.left === null){
+            if(root.left == null){
                 root.left = newNode
             }else{
                 this.insertNode(root.left,newNode)
             }
-
         }else{
-            if(root.right==null){
+            if(root.right == null){
                 root.right = newNode
             }else{
                 this.insertNode(root.right,newNode)
             }
         }
+
     }
 
 
+} 
 
-}
 
 const bst = new BinarySearchTree()
 
-console.log("This is empty?",bst.isEmpty())
+console.log("this is empty",bst.isEmpty())
