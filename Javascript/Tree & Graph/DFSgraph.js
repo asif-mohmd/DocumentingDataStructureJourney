@@ -1,3 +1,5 @@
+//   DFS
+
 class Graph {
     constructor() {
       this.adjacencyList = new Map();
@@ -12,26 +14,23 @@ class Graph {
       this.adjacencyList.get(vertex2).push(vertex1); // For undirected graph
     }
   
-    bfs(startingNode) {
+    dfs(startingNode) {
       const visited = new Set();
-      const queue = [];
   
-      visited.add(startingNode);
-      queue.push(startingNode);
+      const explore = (vertex) => {
+        console.log(vertex);
+        visited.add(vertex);
   
-      while (queue.length > 0) {
-        const currentVertex = queue.shift();
-        console.log(currentVertex);
-  
-        const neighbors = this.adjacencyList.get(currentVertex);
+        const neighbors = this.adjacencyList.get(vertex);
   
         for (const neighbor of neighbors) {
           if (!visited.has(neighbor)) {
-            visited.add(neighbor);
-            queue.push(neighbor);
+            explore(neighbor);
           }
         }
-      }
+      };
+  
+      explore(startingNode);
     }
   }
   
@@ -49,5 +48,5 @@ class Graph {
   graph.addEdge("B", "D");
   graph.addEdge("C", "E");
   
-  graph.bfs("A");
+  graph.dfs("A");
   
