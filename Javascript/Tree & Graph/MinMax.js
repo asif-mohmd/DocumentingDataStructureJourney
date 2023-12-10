@@ -79,6 +79,23 @@ class BinarySearch{
     }
 
 
+    min(root){
+        if(!root.left){
+            return root.value
+        }else{
+            return this.min(root.left)
+        }
+    }
+
+    max(root){
+        if(!root.right){
+            return root.value
+        }else{
+            return this.max(root.right)
+        }
+    }
+
+
 
 }
 
@@ -92,5 +109,7 @@ bst.insert(5)
 bst.insert(7)
 bst.insert(15)
 
-bst.preOrder(bst.root)
+console.log(bst.min(bst.root))
+console.log(bst.max(bst.root))
+
 console.log(bst.search(bst.root,30))
