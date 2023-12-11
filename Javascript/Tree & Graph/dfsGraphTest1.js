@@ -27,7 +27,6 @@ class Graph{
                 }
             }
         }
-
         explore(startingNode)
     }
 }

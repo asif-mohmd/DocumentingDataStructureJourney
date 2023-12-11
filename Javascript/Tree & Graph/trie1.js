@@ -49,6 +49,9 @@ trie.insert("apple");
 trie.insert("app");
 trie.insert("apricot");
 
+console.log(trie.search("applee"))
+console.log(trie.startsWith("app"))
+
 // The trie structure would look like:
 // root -> a -> p -> p -> l -> e (isWord=true)
 //              |
