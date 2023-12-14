@@ -45,6 +45,8 @@ class Trie{
 
 }
 
+
+
 const trie = new Trie()
 
 trie.insert("apple")
