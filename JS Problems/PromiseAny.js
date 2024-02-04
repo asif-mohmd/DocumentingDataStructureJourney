@@ -12,6 +12,8 @@ const P3 = new Promise((resolve,reject)=>{
     setTimeout(()=> resolve("P3 settle success"),2000)
 })
 
+
+
 Promise.any([P1,P2,P3]).then((response)=>{
     console.log(response)
 }).catch((err)=>{
