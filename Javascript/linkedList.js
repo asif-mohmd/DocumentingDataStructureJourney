@@ -30,7 +30,6 @@ class LinkedList{
             this.head = node
         }
         this.size++
-
     }
 } 
 
