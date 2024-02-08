@@ -2,7 +2,7 @@
 
 function a() {
 
-    a = 10;
+    a = 10
 
     b(a);
 
@@ -17,5 +17,5 @@ function a() {
   }
   
   
-  a();
+  a();  
   
