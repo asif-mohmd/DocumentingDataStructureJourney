@@ -17,6 +17,9 @@ function palindrome(str) {
     // If the loop completes, the string is a palindrome
     return true;
 }
+
+
+
   
 let out = palindrome("malayalam");
 console.log(out); // Output will be true as "malayalam" is a palindrome
