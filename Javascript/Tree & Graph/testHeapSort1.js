@@ -26,8 +26,6 @@ function heapify(array,i,length){
         [array[i],array[largest]] = [array[largest],array[i]]
         heapify(array,largest,length)
     }
-
-
 }
 
 

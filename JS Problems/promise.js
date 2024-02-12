@@ -11,7 +11,7 @@ createOrder(cart)
   .catch(function (err) {
     console.log("Error:",err)
   });
-
+console.log("test")
 function createOrder(cart) {
   let data = new Promise((resolve, reject) => {
     if (!validCart(cart)) {
@@ -26,5 +26,5 @@ function createOrder(cart) {
 
 
 function validCart(cart){
-       return false
+       return true
 }
