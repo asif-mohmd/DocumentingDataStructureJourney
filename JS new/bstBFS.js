@@ -42,6 +42,23 @@ class binarySearchTree{
         }
     }
 
+    levelOrder(){
+        let queue = []
+        queue.push(this.root)
+        while(queue.length){
+            let curr = queue.shift()
+            console.log(curr.value)
+
+            if(curr.left){
+                queue.push(curr.left)
+            }
+            if(curr.right){
+                queue.push(curr.right)
+            }
+        }
+    }
+
+
 
     search(root,value){
         if(!root){
@@ -63,7 +80,10 @@ class binarySearchTree{
 const bst = new binarySearchTree()
 
 bst.insert(10)
-bst.insert(20)
 bst.insert(5)
+bst.insert(15)
+bst.insert(3)
+bst.insert(7)
 
 console.log(bst.search(bst.root,20))
+bst.levelOrder()
